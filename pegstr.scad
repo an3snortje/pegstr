@@ -7,6 +7,8 @@
 //		- minor tweaks to increase rendering speed. added logo. 
 // November 28th 2014
 //		- bug fixes
+// March 30th 2021
+//		- Modified for 4mm hole size, 25mm spacing and 3,2mm thickness
 
 // preview[view:north, tilt:bottom diagonal]
 
