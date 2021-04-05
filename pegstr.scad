@@ -8,18 +8,19 @@
 // November 28th 2014
 //		- bug fixes
 // March 30th 2021
-//		- Modified for 4mm hole size, 25mm spacing and 3,2mm thickness
+//		- Modified for 4mm hole size, 25mm spacing and 3.2mm thickness
+//		- Changes some inputs to take decimals
 
 // preview[view:north, tilt:bottom diagonal]
 
 // width of the orifice
-holder_x_size = 10;
+holder_x_size = 10.0;
 
 // depth of the orifice
-holder_y_size = 10;
+holder_y_size = 10.0;
 
 // hight of the holder
-holder_height = 15;
+holder_height = 15.0;
 
 // how thick are the walls. Hint: 6*extrusion width produces the best results.
 wall_thickness = 1.85;
@@ -31,7 +32,7 @@ holder_x_count = 1;
 holder_y_count = 2;
 
 // orifice corner radius (roundness). Needs to be less than min(x,y)/2.
-corner_radius = 30;
+corner_radius = 30.0;
 
 // Use values less than 1.0 to make the bottom of the holder narrow
 taper_ratio = 1.0;
@@ -124,7 +125,7 @@ module old_pin(clip)
 			translate([0, hole_size/2 + 2, board_thickness/2]) 
 				rotate([0, 90, 0])
 				rotate_extrude(convexity = 5, $fn=20)
-				translate([5, 0, 0])
+				translate([4.3, 0, 0])
 				 circle(r = (hole_size*0.95)/2); 
 			
 			translate([0, hole_size/2 + 2 - 1.6, board_thickness/2]) 
