@@ -1,8 +1,0 @@
-services:
-  aspire-calendar:
-    build: .
-    container_name: aspire-blackboard-calendar
-    env_file: .env
-    volumes:
-      - ./data:/srv/app/data
-    restart: unless-stopped
